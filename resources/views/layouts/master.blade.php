@@ -33,5 +33,16 @@
         <script src="{{asset('assets/assets/demo/chart-bar-demo.js')}}"></script>
         <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
         <script src="{{asset('assets/js/datatables-simple-demo.js')}}"></script>
+
+        {{-- CK EDITOR --}}
+        <script src="https://cdn.ckeditor.com/ckeditor5/35.1.0/classic/ckeditor.js"></script>
+
+        <script>
+            ClassicEditor
+                .create( document.querySelector( '#ckeditor' ) )
+                .catch( error => {
+                    console.error( error );
+                } );
+        </script>
 </body>
 </html>
