@@ -24,6 +24,7 @@ class DescriptionController extends Controller
         ]);
         $description = new DescriptionModel();
         $description->description = $request->input('description');
+        $description->ckeditor = $request->input('ckeditor');
         $description->save();
         return redirect()->back();
     }
@@ -41,15 +42,7 @@ class DescriptionController extends Controller
         return view('admin.description.descriptionedit', compact('description'));
     }
 
-    public function descriptionupdate(Request $request, $des_id)
-    {
-        $description = DescriptionModel::find($des_id);
-
-        $description->name = $request->description;
-
-        $description->update();
-        return redirect('admin/des_table');
-    }
+    
 
     public function deletedescription($id)
     {
@@ -62,10 +55,11 @@ class DescriptionController extends Controller
     public function update_des(Request $request)
     {
 
-       
+
         $description = DescriptionModel::find($request->id);
 
         $description->description = $request->description;
+        $description->ckeditor = $request->ckeditor;
 
         $description->update();
         return redirect('admin/des_table');

@@ -13,13 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-     
+
             Schema::create('description', function (Blueprint $table) {
                 $table->id();
                 $table->string('description');
+                $table->string('ckeditor');
                 $table->timestamps();
             });
-       
+
     }
 
     /**

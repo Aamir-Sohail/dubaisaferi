@@ -11,6 +11,6 @@ class DescriptionModel extends Model
     protected $table =('description');
     protected $fillable =([
         'description',
-        
+        'ckeditor',
     ]);
 }
