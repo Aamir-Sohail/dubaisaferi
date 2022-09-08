@@ -23,6 +23,7 @@
                                     <tr>
                                         <th>id</th>
                                         <th>Name</th>
+                                        <th>Complet Description</th>
                                         <th>Edit</th>
                                         <th>Delete</th>
 
@@ -36,6 +37,7 @@
                                         <tr>
                                             <td>{{ $description->id }}</td>
                                             <td>{{ $description->description }}</td>
+                                            <td>{{ $description->ckeditor }}</td>
                                             <td>
                                                 <a href="{{ url('admin/des_edit', $description->id) }}"
                                                     class="btn btn-success">Edit</a>

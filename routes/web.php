@@ -3,12 +3,14 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Admin\AdminLogout;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\userview\BookingController;
 use App\Http\Controllers\userview\Contactcontroller;
 use App\Http\Controllers\Admin\DescriptionController;
 use App\Http\Controllers\Admin\UserBookingController;
+use App\Http\Controllers\userview\UserviewController;
 use App\Http\Controllers\Admin\AdminContactController;
 
 /*
@@ -62,4 +64,7 @@ Route::prefix('admin')->middleware(['auth', 'isAdmin'])->group(function () {
     //Contact Controller
     Route::get('allcontact',[AdminContactController::class,'index']);
     Route::get('delete_contact/{id}', [AdminContactController::class, 'deletecontact']);
+
+//Logout......
+Route::get('logout',[AdminLogout::class,'index']);
 });
