@@ -27,7 +27,7 @@
        <li><a href='#'>Dubai Tours </a></li>
        <li><a href='#'> Gallery</a></li>
         <li><a href='#'>Contact Us</a></li>
-        <li><a href="">logout</a></li>
+        <li><a href="{{ url('admin/logout') }}">logout</a></li>
           
        
     </ul>

@@ -33,7 +33,7 @@
                         <li><a href='#'>Dubai Tours </a></li>
                         <li><a href='#'> Gallery</a></li>
                         <li><a href='{{ url('/contact') }}'>Contact Us</a></li>
-                        <li><a href="{{ url('/logout') }}">logout</a></li>
+                        <li><a href="{{ url('admin/logout') }}">logout</a></li>
 
 
                     </ul>
