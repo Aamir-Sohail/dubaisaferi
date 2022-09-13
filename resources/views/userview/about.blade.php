@@ -21,21 +21,21 @@
         <div class="col-md-9">
         	<div id='cssmenu'>
     <ul>
-       <li><a href='#'>Home</a></li>
+       <li><a href='{{ url('home') }}'>Home</a></li>
        <li><a href='#'>Desert Safari</a> </li>
        <li><a href='#'>Camel Ride</a></li>
        <li><a href='#'>Dubai Tours </a></li>
        <li><a href='#'> Gallery</a></li>
-        <li><a href='#'>Contact Us</a></li>
-        <li><a href="{{ url('admin/logout') }}">logout</a></li>
-          
-       
+        <li><a href='{{ url('/contact') }}'>Contact Us</a></li>
+        <li><a href="{{ url('logout') }}">logout</a></li>
+
+
     </ul>
-    </div><!--END OF CSS MENU--> 
+    </div><!--END OF CSS MENU-->
         </div><!--END OF COL MD 9-->
     </div><!--END OF ROW-->
 </div><!--END OF CONTAINER-->
-<div class="banner_area">                
+<div class="banner_area">
 	<img src="images/inner.jpg" alt="" class="img-responsive" />
 </div><!--END OF BANNER AREA-->
 <div class="clearfix"></div>
@@ -56,7 +56,7 @@
                 <li>Dubai's No.1 Company - Call us for Group Discount (+971- 55-828 90 14 )We are offering best family & kids deals.</li>
             </ul>
         </div><!--END OF WELCOME TEXT--->
-<div class="clearfix"></div>       
+<div class="clearfix"></div>
     </div><!--END OF CONTAINER0-->
 </div><!--END OF WELCOME-->
 <div class="back_top"><a href="#top"><img src="images/back_top.png" alt="" class="img-responsive" /></a></div><!--END OF BACK TOP-->
@@ -73,7 +73,7 @@
                 </ul>
             </div><!--END OF FOOTER LEFT-->
         </div><!--EMD OF COL MD 3-->
-        
+
         <div class="col-md-9">
         	<div class="top_footer">
              <h4><span>Call today:</span> +662 696 8770</h4>
@@ -81,7 +81,7 @@
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                 	<li><a href="#"><i class="fa fa-facebook"></i></a></li>
                 </ul>
-               
+
             </div><!--END OF TOP FOOTER-->
             <div class="links">
             	<ul class="list-inline">
@@ -104,11 +104,11 @@
         </div><!--END OF COL MD 9-->
     </div><!--END OF CONTAINER0-->
 </div><!--END OF FOOTER-->
-<script type="text/javascript" src="js/jquery.min.js"></script>	
-<script type="text/javascript" src="js/bootstrap.min.js"></script>	
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script src="js/responsiveslides.min.js"></script>
-<script type="text/jscript" src="js/custom.js"></script>  
-<script src="js/jquery-ui.js"></script>  
+<script type="text/jscript" src="js/custom.js"></script>
+<script src="js/jquery-ui.js"></script>
     <script>
     $(function() {
         $( "#datepicker" ).datepicker();

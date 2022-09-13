@@ -65,6 +65,8 @@ Route::prefix('admin')->middleware(['auth', 'isAdmin'])->group(function () {
     Route::get('allcontact',[AdminContactController::class,'index']);
     Route::get('delete_contact/{id}', [AdminContactController::class, 'deletecontact']);
 
+
+
+});
 //Logout......
 Route::get('logout',[AdminLogout::class,'index']);
-});

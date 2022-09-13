@@ -26,27 +26,46 @@
             <div class="col-md-9">
                 <div id='cssmenu'>
                     <ul>
-                        <li><a href='#'>Home</a></li>
+                        <li><a href='{{ url('home') }}'>Home</a></li>
                         <li><a href='#'>Desert Safari</a>
                             <ul>
-                                <li><a href='#'>Camel Ride</a></li>
-                                <li><a href='#'>Dubai Tours </a></li>
-                                <li><a href='#'> Gallery</a>
+                                <li><a href='{{ url('home') }}'>Camel Ride</a></li>
+                                <li><a href='{{ url('home') }}'>Dubai Tours </a></li>
+                                <li><a href='{{ url('home') }}'> Gallery</a>
                                     <ul>
-                                        <li><a href='#'>Camel Ride</a></li>
-                                        <li><a href='#'>Dubai Tours </a></li>
-                                        <li><a href='#'> Gallery</a></li>
-                                        <li><a href='#'>Contact Us</a></li>
+                                        <li><a href='{{ url('home') }}'>Camel Ride</a></li>
+                                        <li><a href='{{ url('home') }}'>Dubai Tours </a></li>
+                                        <li><a href='{{ url('home') }}'> Gallery</a></li>
+                                        <li><a href='{{ url('home') }}'>Contact Us</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="">Contact Us</a></li>
                             </ul>
                         </li>
-                        <li><a href='#'>Camel Ride</a></li>
-                        <li><a href='#'>Dubai Tours </a></li>
-                        <li><a href='#'> Gallery</a></li>
+                        <li><a href='{{ url('home') }}'>Camel Ride</a></li>
+                        <li><a href='{{ url('home') }}'>Dubai Tours </a></li>
+                        <li><a href='{{ url('home') }}'> Gallery</a></li>
                         <li><a href='{{ url('/contact') }}'>Contact Us</a></li>
-                        <li><a href="{{ url('admin/logout') }}">logout</a></li>
+                        <li><a href='{{ url('logout') }}'>Logout</a>
+
+
+
+                            {{-- <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{{ route('logout') }}"
+                                   onclick="event.preventDefault();
+                                                 document.getElementById('logout-form').submit();">
+                                    {{ __('Logout') }}
+                                    logout
+                                </a>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                </form>
+                            </div> --}}
+
+
+
+                        </li>
 
 
                     </ul>

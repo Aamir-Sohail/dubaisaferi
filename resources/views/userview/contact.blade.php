@@ -27,13 +27,13 @@
             <div class="col-md-9">
                 <div id='cssmenu'>
                     <ul>
-                        <li><a href='#'>Home</a></li>
+                        <li><a href='{{ url('home') }}'>Home</a></li>
                         <li><a href='#'>Desert Safari</a> </li>
                         <li><a href='#'>Camel Ride</a></li>
                         <li><a href='#'>Dubai Tours </a></li>
                         <li><a href='#'> Gallery</a></li>
                         <li><a href='{{ url('/contact') }}'>Contact Us</a></li>
-                        <li><a href="{{ url('admin/logout') }}">logout</a></li>
+                        <li><a href="{{ url('logout') }}">logout</a></li>
 
 
                     </ul>
@@ -119,7 +119,7 @@
                             <!--END OF COL MD 12-->
                             <div class="col-md-12">
                                 <textarea class="form-control" placeholder="Message" name="message" value="">
-       
+
               </textarea>
                                 <span class="text-danger">
                                     @error('message')

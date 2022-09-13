@@ -22,22 +22,22 @@
         <div class="col-md-9">
         	<div id='cssmenu'>
     <ul>
-       <li><a href='#'>Home</a></li>
+       <li><a href='{{ url('home') }}'>Home</a></li>
        <li><a href='#'>Desert Safari</a> </li>
        <li><a href='#'>Camel Ride</a></li>
        <li><a href='#'>Dubai Tours </a></li>
        <li><a href='#'> Gallery</a></li>
-        <li><a href='#'>Contact Us</a></li>
-        <li><a href="{{ url('admin/logout') }}">logout</a></li>
-          
-       
+        <li><a href='{{ url('/contact') }}'>Contact Us</a></li>
+        <li><a href="{{ url('logout') }}">logout</a></li>
+
+
     </ul>
-    </div><!--END OF CSS MENU--> 
+    </div><!--END OF CSS MENU-->
         </div><!--END OF COL MD 9-->
     </div><!--END OF ROW-->
 </div><!--END OF CONTAINER-->
-<div class="banner_area">                
-<img src="images/inner.jpg" alt="" class="img-responsive" /></li>      
+<div class="banner_area">
+<img src="images/inner.jpg" alt="" class="img-responsive" /></li>
 </div><!--END OF BANNER AREA-->
 <div class="clearfix"></div>
 
@@ -48,7 +48,7 @@
 	<li><a href="#">Home</a></li>
     <li>Detail</li>
 </ol>
-    
+
     <div class="clearfix"></div>
     <div class="hotel_detail row">
     	<div class="col-md-6">
@@ -61,8 +61,8 @@
                      <li><img src="images/d5.jpg" alt="" class="img-responsive" /></li>
 			      </ul>
         </div><!--END OF ON BANNER BOX-->
-        </div><!--END OF COL MD 7--> 
-        
+        </div><!--END OF COL MD 7-->
+
         <div class="col-md-3">
         	<div class="detail_text">
             	<h3>LUXURY RESORT <span> MALDIVES</span></h3>
@@ -70,7 +70,7 @@
                 <p> After that, you proceed with the excursion and land into a camp to see the desert and walk in the desert, do the camel ride. Then you will go to the  </p>
             </div><!--END OF DETAIL TEXT-->
         </div><!--END OF COL MD 5-->
-        
+
         <div class="col-md-3 parent_booking">
         <div class="booking">
     <form class="col-md-12">
@@ -106,8 +106,8 @@
                 </form>
     </div><!--END OF BOOKING-->
     </div><!--END OF COL MD 5-->
-        
-    </div><!--END OF HOTEL DETAIL-->  
+
+    </div><!--END OF HOTEL DETAIL-->
     </div><!--END OF CONTAINER0-->
 </div><!--END OF WELCOME-->
 
@@ -125,7 +125,7 @@
                 </ul>
             </div><!--END OF FOOTER LEFT-->
         </div><!--EMD OF COL MD 3-->
-        
+
         <div class="col-md-9">
         	<div class="top_footer">
              <h4><span>Call today:</span> +662 696 8770</h4>
@@ -133,7 +133,7 @@
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                 	<li><a href="#"><i class="fa fa-facebook"></i></a></li>
                 </ul>
-               
+
             </div><!--END OF TOP FOOTER-->
             <div class="links">
             	<ul class="list-inline">
@@ -156,11 +156,11 @@
         </div><!--END OF COL MD 9-->
     </div><!--END OF CONTAINER0-->
 </div><!--END OF FOOTER-->
-<script type="text/javascript" src="js/jquery.min.js"></script>	
-<script type="text/javascript" src="js/bootstrap.min.js"></script>	
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script src="js/responsiveslides.min.js"></script>
-<script type="text/jscript" src="js/custom.js"></script>  
-<script src="js/jquery-ui.js"></script>  
+<script type="text/jscript" src="js/custom.js"></script>
+<script src="js/jquery-ui.js"></script>
     <script>
     $(function() {
         $( "#datepicker" ).datepicker();
