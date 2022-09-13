@@ -1,17 +1,17 @@
 <?php
 
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Admin\AdminContactController;
 use App\Http\Controllers\Admin\AdminLogout;
-use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\DescriptionController;
+use App\Http\Controllers\Admin\GalleryController;
+use App\Http\Controllers\Admin\UserBookingController;
+use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\userview\BookingController;
 use App\Http\Controllers\userview\Contactcontroller;
-use App\Http\Controllers\Admin\DescriptionController;
-use App\Http\Controllers\Admin\UserBookingController;
-use App\Http\Controllers\userview\UserviewController;
-use App\Http\Controllers\Admin\AdminContactController;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -62,11 +62,13 @@ Route::prefix('admin')->middleware(['auth', 'isAdmin'])->group(function () {
     Route::put('update_description', [DescriptionController::class, 'update_des']);
 
     //Contact Controller
-    Route::get('allcontact',[AdminContactController::class,'index']);
+    Route::get('allcontact', [AdminContactController::class, 'index']);
     Route::get('delete_contact/{id}', [AdminContactController::class, 'deletecontact']);
 
-
+//Gallery Controller..
+    Route::get('gallery', [GalleryController::class, 'index']);
+    Route::post('storegallery', [GalleryController::class, 'store']);
 
 });
 //Logout......
-Route::get('logout',[AdminLogout::class,'index']);
+Route::get('logout', [AdminLogout::class, 'index']);

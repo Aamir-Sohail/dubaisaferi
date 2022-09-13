@@ -25,6 +25,7 @@ class HomeController extends Controller
     public function index()
     {
         $description = DescriptionModel::all();
+   
         return view('userview.index', compact('description'));
 
     }
