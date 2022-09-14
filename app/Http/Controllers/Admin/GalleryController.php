@@ -66,7 +66,9 @@ class GalleryController extends Controller
         // echo "</pre>";
         // die;
 
+        // dd($gallery); //ok
         $gallery->save();
+
 
         return redirect('admin/gallery');
     }

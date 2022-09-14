@@ -10,7 +10,7 @@
 
             <main>
                 <!-- write here -->
-                <form action="{{ url('admin/storegallery') }}" method="POST" >
+                <form action="{{ url('admin/storegallery') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="banner_form_three">
                         <div class="row mb-3">
