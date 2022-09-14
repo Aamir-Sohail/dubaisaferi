@@ -79,9 +79,10 @@ class GalleryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
-        //
+        $gallerys =  AdminGalleryModel::all();
+        return view('admin.gallery.allgallery',compact('gallerys'));
     }
 
     /**

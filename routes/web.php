@@ -68,7 +68,7 @@ Route::prefix('admin')->middleware(['auth', 'isAdmin'])->group(function () {
 //Gallery Controller..
     Route::get('gallery', [GalleryController::class, 'index']);
     Route::post('storegallery', [GalleryController::class, 'store']);
-
+    Route::get('allgallery', [GalleryController::class, 'show']);
 });
 //Logout......
 Route::get('logout', [AdminLogout::class, 'index']);

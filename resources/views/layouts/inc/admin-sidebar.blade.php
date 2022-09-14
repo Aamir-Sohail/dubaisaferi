@@ -68,13 +68,13 @@
                     Tables
                 </a>
 
-                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages"
+                {{-- <a class="nav-link collapsed" href="#" data-bs-toggle="collapse2" data-bs-target="#collapsePages"
                 aria-expanded="false" aria-controls="collapsePages">
-                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                <div class="sb-nav-link-icon"></div>
                 Gallery
                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-            </a>
-            <div class="collapse" id="collapsePages" aria-labelledby="headingTwo"
+            </a> --}}
+            <div class="collapsed" id="collapse2" aria-labelledby="headingTwo"
                 data-bs-parent="#sidenavAccordion">
                 <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
                     <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
@@ -82,18 +82,18 @@
                         Gallery
                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                     </a>
-                    <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne"
-                        data-bs-parent="#sidenavAccordionPages">
-                        <nav class="sb-sidenav-menu-nested nav">
-                            <a class="nav-link" href="{{ url('admin/gallery') }}">Add New Gallery</a>
-                            <a class="nav-link" href="{{ url('admin/allgallery') }}">All Gallery</a>
-                            {{-- <a class="nav-link" href="password.html">Forgot Password</a> --}}
-                        </nav>
-                    </div>
+
+                    <div class="collapse2" id="pagesCollapseAuth" aria-labelledby="headingOne"
+                    data-bs-parent="#sidenavAccordionPages">
+                    <nav class="sb-sidenav-menu-nested nav">
+                        <a class="nav-link" href="{{ url('admin/gallery') }}">Add New Gallery</a>
+                        <a class="nav-link" href="{{ url('admin/allgallery') }}">All Gallery</a>
+
+                    </nav>
+                </div>
 
 
                 </nav>
-
 
 
             </div>
