@@ -36,13 +36,12 @@ class UserBookingController extends Controller
         $booking->date = $request->date;
         $booking->message = $request->message;
 
-
         $booking->update();
         return redirect('admin/booking');
     }
     public function deletebooking($booking_id)
     {
-        $booking= BookingModel::find($booking_id);
+        $booking = BookingModel::find($booking_id);
         $booking->delete();
         return redirect()->back();
     }

@@ -69,7 +69,6 @@ class GalleryController extends Controller
         // dd($gallery); //ok
         $gallery->save();
 
-
         return redirect('admin/gallery');
     }
 
@@ -81,8 +80,8 @@ class GalleryController extends Controller
      */
     public function show()
     {
-        $gallerys =  AdminGalleryModel::all();
-        return view('admin.gallery.allgallery',compact('gallerys'));
+        $gallerys = AdminGalleryModel::all();
+        return view('admin.gallery.allgallery', compact('gallerys'));
     }
 
     /**
@@ -116,6 +115,8 @@ class GalleryController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $gallery = AdminGalleryModel::find($id);
+        $gallery->delete();
+        return redirect()->back();
     }
 }

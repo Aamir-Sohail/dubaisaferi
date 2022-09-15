@@ -40,10 +40,11 @@
                                         <tr>
                                             <td>{{ $gallery->id }}</td>
                                             <td>{{ $gallery->price }}</td>
-                                            <td>{{$gallery->country }}</td>
-                                            <td>{{$gallery->description }}</td>
-                                            <td>{{$gallery->title }}</td>
-                                            <td> <img src ="{{ asset('uploads/gallery/' .$gallery->file) }}" width="70px" height ="70px" alt="image">
+                                            <td>{{ $gallery->country }}</td>
+                                            <td>{{ $gallery->description }}</td>
+                                            <td>{{ $gallery->title }}</td>
+                                            <td> <img src="{{ asset('uploads/gallery/' . $gallery->file) }}" width="70px"
+                                                    height="70px" alt="image">
 
                                             </td>
                                             <td>
