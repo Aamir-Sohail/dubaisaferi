@@ -81,6 +81,7 @@ class GalleryController extends Controller
     public function show()
     {
         $gallerys = AdminGalleryModel::all();
+        // dd($gallerys);
         return view('admin.gallery.allgallery', compact('gallerys'));
     }
 

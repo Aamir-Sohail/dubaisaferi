@@ -201,75 +201,29 @@
             <div class="clearfix"></div>
 
             <div class="list row">
+                @foreach ($gallerys as $gall)
+
+
                 <div class="col-md-6">
 
                     <div class="col-md-6 no_padding view">
-                        <img src="{{ asset('images/b1.jpg') }}" alt="" class="img-responsive" />
-                        <h4>AED 120/-</h4>
+                        <img src="{{ asset('uploads/gallery/' . $gall->file) }}" width="100%"
+                        height="100%" alt="image"  class="img-responsive">
+                        <h4>{{ $gall->price }}</h4>
                     </div>
                     <!--END OF COL MD 6-->
 
                     <div class="col-md-6 no_padding details">
-                        <h3>Luxury Resort <span>Maldives</span></h3>
-                        <p>Ersvitae ertyas nemosera lasecaerat niptaiades keuytaser sectraseas geotayse.</p>
+                        <h3>{{ $gall->title }} <span>{{ $gall->country }}</span></h3>
+                        <p>{{ $gall->description }}.</p>
                         <a href="#" class="btn">Detail</a>
                     </div>
                     <!--END OF COL MD 6-->
 
                 </div>
-                <!--END OF COL MD 6-->
-                <div class="col-md-6">
 
-                    <div class="col-md-6 no_padding view">
-                        <img src="{{ asset('images/b2.jpg') }}" alt="" class="img-responsive" />
-                        <h4>AED 120/-</h4>
-                    </div>
-                    <!--END OF COL MD 6-->
+                @endforeach
 
-                    <div class="col-md-6 no_padding details">
-                        <h3>grand tour <span>london</span></h3>
-                        <p>Ersvitae ertyas nemosera lasecaerat niptaiades keuytaser sectraseas geotayse.</p>
-                        <a href="#" class="btn">Detail</a>
-                    </div>
-                    <!--END OF COL MD 6-->
-
-                </div>
-                <!--END OF COL MD 6-->
-
-                <div class="col-md-6">
-
-                    <div class="col-md-6 no_padding view">
-                        <img src="{{ asset('images/b3.jpg') }}" alt="" class="img-responsive" />
-                        <h4>AED 120/-</h4>
-                    </div>
-                    <!--END OF COL MD 6-->
-
-                    <div class="col-md-6 no_padding details">
-                        <h3>Royal palance <span>caribe</span></h3>
-                        <p>Ersvitae ertyas nemosera lasecaerat niptaiades keuytaser sectraseas geotayse.</p>
-                        <a href="#" class="btn">Detail</a>
-                    </div>
-                    <!--END OF COL MD 6-->
-
-                </div>
-                <!--END OF COL MD 6-->
-                <div class="col-md-6">
-
-                    <div class="col-md-6 no_padding view">
-                        <img src="{{ asset('images/b4.jpg') }}" alt="" class="img-responsive" />
-                        <h4>AED 120/-</h4>
-                    </div>
-                    <!--END OF COL MD 6-->
-
-                    <div class="col-md-6 no_padding details">
-                        <h3>barcelo <span>tucancun beach</span></h3>
-                        <p>Ersvitae ertyas nemosera lasecaerat niptaiades keuytaser sectraseas geotayse.</p>
-                        <a href="#" class="btn">Detail</a>
-                    </div>
-                    <!--END OF COL MD 6-->
-
-                </div>
-                <!--END OF COL MD 6-->
             </div>
             <!--END OF LIST-->
         </div>
